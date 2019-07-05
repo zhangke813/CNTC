@@ -1,0 +1,169 @@
+<!-- header 模块 开始 -->
+<style>
+	.header {
+		height: 560px;
+		font-family: 'Source Han Sans CN';
+		font-size: 14px;
+	}
+
+	.header>nav {
+		height: 70px;
+	}
+
+	.header>nav>ul {
+		height: 70px;
+	}
+
+	.header li {
+		position: relative;
+	}
+
+	.header li,
+	.header a,
+	.header dd {
+		float: left;
+		height: 70px;
+		line-height: 70px;
+		width: 118px;
+		text-align: center;
+		display: inline-block;
+		background-color: #fff;
+	}
+
+	.header a,
+	.header a:visited {
+		color: #000;
+	}
+	
+	.header a,.header dt{
+		text-transform:Capitalize;
+	}
+
+	.header a:hover,
+	.header dl:hover,
+	.header li:hover {
+		color: #fff;
+		background-color: red;
+	}
+
+	.header dl dd {
+		display: none;
+	}
+
+	.header dl {
+		position: absolute;
+		top: 70px;
+		width: 180px;
+		left: -31px;
+	}
+
+	.header dt {
+		position: absolute;
+		top: -70px;
+		text-align: center;
+		width: 118px;
+		left: 31px;
+	}
+
+	.header dd,
+	.header dd>a {
+		width: 180px;
+	}
+
+	.header li:hover dd {
+		display: block;
+	}
+
+
+	.exhibition {
+		height: 490px;
+		background: url(../static/header/news-banner.jpg) center center;
+	}
+
+	.header dl {
+		background-color: #fff;
+	}
+</style>
+<div class="header">
+	<nav class="center">
+		<div class="pull-left"><img height="70" src="../static/header/e_cntc_logo.png"></span></div>
+		<ul class="pull-right">
+			<li class="action"><a href="e-home.html">home</a></li>
+			<li>
+				<dl>
+					<dt>overseas</dt>
+					<dd>
+						<a href="e-introduce.html">introduction</a>
+					</dd>
+					<dd>
+						<a href="e-chairman1.html">speech from chairman</a>
+					</dd>
+					<dd>
+						<a href="e-core.html">core team</a>
+					</dd>
+					<dd>
+						<a href="e-group.html">organizational structure</a>
+					</dd>
+					<dd>
+						<a href="e-history.html">history of development</a>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>news centre</dt>
+					<dd>
+						<a href="e-group_news.html">news about the group</a>
+					</dd>
+					<dd>
+						<a href="e-block_news.html">sector update</a>
+					</dd>
+					<dd>
+						<a href="e-media_news.html">press focus</a>
+					</dd>
+					<dd>
+						<a href="e-oversea_pdf.html">overseas monthly</a>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt>brand influence</dt>
+					<dd>
+						<a href="e-power1.html">brand strength</a>
+					</dd>
+					<dd>
+						<a href="e-optimization.html">engineering of excellence</a>
+					</dd>
+					<dd>
+						<a href="e-china.html">China projects</a>
+					</dd>
+					<dd>
+						<a href="e-oversea.html">overseas projects</a>
+					</dd>
+					<dd>
+						<a href="e-care.html">government support</a>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<a href="e-society.html">join us</a>
+				<!--<dl>
+					<dt>join me</dt>
+					<dd>
+						<a href="school.html">campus recruitment</a>
+					</dd>
+					<dd>
+						<a href="society.html">social recruitment</a>
+					</dd>
+				</dl>-->
+			</li>
+			<li><a href="e-contact.html">contact us</a></li>
+		</ul>
+	</nav>
+
+	<div id="exhibition" class="exhibition">
+
+	</div>
+</div>
+<!-- header 模块 结束 -->

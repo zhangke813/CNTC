@@ -1,0 +1,61 @@
+.core{
+	width: 1160px;
+	margin:0 auto;
+	margin-top: 50px;
+	height: 590px;
+}
+.core .coreright{
+	height:530px;
+	width:700px;
+	float:right;
+}
+.core .coreright .coreb{
+	height:100px;
+	padding-top:20px;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: right;
+}
+.core .coreright .coreb p{
+	padding-top:5px;
+	font-size: 20px;
+	color:goldenrod;
+	text-align: right;
+}
+.core .coreright p{
+	padding-top:10px;
+	font-size: 14px;
+}
+.core .coreleft{
+	height:530px;
+	width:400px;
+	float:left;
+	font-size: 14px;
+}
+.core .coreleft img{
+	padding-left:90px;
+	height:300px;
+	width:220px;
+}
+.core .coreleft .corebottom{
+	padding-top: 20px;
+	background: #FFFFFF;
+	text-align: center;
+}
+.core .coreleft .corebottom .corea{
+	font-size: 40px;
+	font-family: italic;
+}
+.core .coreleft .corebottom p{
+	padding-top:10px;
+	font-size: 18px;
+	color: goldenrod;
+	text-align: center;
+}
+.coretitle{
+	margin:0 auto;
+}
+.core .coreleft .corebottom .a{
+	font-size: 30px;
+	text-align: center;
+}

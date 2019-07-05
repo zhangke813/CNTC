@@ -1,0 +1,125 @@
+<!-- 
+	作者:张俊男
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../static/nav/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/top/top.css"/>
+		<title></title>
+		
+		<script src="../modules/vue/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/top/top.template.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../modules/vue/vue-resource.min.js"></script>
+		<script src="../modules/serverStorage.js"></script>
+	</head>
+	<body>
+		<div id='css'>
+			<style>
+				.preview{
+					width: 1160px;
+					height: 70px;
+					margin: 0 auto;
+				}
+				
+				.preview .pull_left{
+					width: 315px;
+					float: left;
+				}
+				
+				.preview img{
+					width: 315px;
+				}
+				
+				.preview ul li{
+					float: right;
+				}
+				.preview ul dt,dd{
+				    height: 70px;
+				    line-height: 70px;
+				    width: 118px;
+				    text-align: center;
+				}
+				
+				.preview ul dd{
+					display: none;
+				}
+				
+				.preview ul li:hover dd{
+					display: block;
+				}
+				
+				.preview ul li:hover dt,dd:hover{
+					background: red;
+					color: white;
+				}
+			</style>
+		</div>
+		<div id="app">
+			<top></top>
+			<div class="nav_fram">
+				<ul>		
+					<li class="Navs" v-for="(navs,i) in arr">
+						<div class="left">
+							<span class="symbol" @click="openOrclose(i)" v-if="!navs.isopen">➕</span>
+							<span class="symbol" @click="openOrclose(i)" v-if="navs.isopen">➖</span>
+							<input style="width: 180px;" class="form-control" type="text" placeholder="导航名称" v-model="navs.navName">
+							<input style="width: 360px;" class="form-control" type="text" placeholder="子导航正文" v-model="navs.navBody">
+							
+						</div>
+						<div class="right">
+							<a @click="addnav(i)">增加</a>
+							<a @click="delnav(i)">删除</a>
+							<a @click="addnavchild(i)">子导航</a>
+							<a @click="tofront(i)"><span>⬆上移</span></a>
+							<a @click="tonext(i)"><span>⬇下移</span></a>
+						</div>
+						<div class='child'>
+							<ul>
+								<li class="Childs" v-for="(childs,j) in navs.navChilds" v-if="navs.isopen">
+									<div class="left">
+										<input style="width: 180px;" class="form-control" type="text" placeholder="子导航名称" v-model="childs.chiName">
+										<input style="width: 360px;" class="form-control" type="text" placeholder="子导航正文" v-model="childs.chiBody">
+									</div>
+									<div class="right">
+										<a @click="addchild(i,j)">增加</a>
+										<a @click="delchild(i,j)">删除</a>
+										<a @click="childTofront(i,j)"><span>⬆上移</span></a>
+										<a @click="childTonext(i,j)"><span>⬇下移</span></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="nav_preview" :style="isfolding?'height: 120px;':'height: 500px;'">
+				<div class="title">
+					导航预览
+					<input class="ok" type="button" @click="upData()" :id="saveButtonDown?'canNot':''" :value="saveButtonText"/>
+					<input type="hidden" v-model="version" />	
+				</div>
+				<div @click="extension" class="switch" style="text-align: center;color: #CCCCCC;" v-text="isfolding?'点击此处展开':'点击此处折叠'"></div>
+				<div class="content">
+					
+					<div class="preview">
+						<div class="pull_left">
+							<img src="../static/nav/image/cntc_logo.jpg" >
+						</div>
+						<ul>
+							<li v-for="(navs,i) in arr">
+								<dl>
+									<dt v-text="arr[arr.length - i -1].navName"></dt>
+									<dd v-for="childs in arr[arr.length - i -1].navChilds" v-text="childs.chiName"></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../static/nav/nav.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+.core{
+	margin: 0 auto;
+	width:1240px;
+	height:1350px;
+}
+.core .corehead{
+	width: 443px;
+	height: 200px;
+	margin: 50px auto;
+}
+/**
+ * 老大的格式
+ */
+.core .corehead img{
+	height: 184px;
+	width: 148px;
+	float: left;
+	border:2px solid goldenrod;
+}
+.core .corehead .coreheada p{
+	padding-top:5px;
+	font-size: 6px;
+}
+.core .corehead .coreheada h3{
+	color:goldenrod;
+	font-size: 14px;
+}
+.core .corehead .coreheada .coreheadb{
+	margin-top:20px;
+}
+.core .corehead .coreheada h4{
+	padding-top:10px;
+	color:goldenrod;
+}
+.core .corehead .coreheada h6{
+	padding-top:5px;
+	color:goldenrod;
+	font-size: 5px;
+}
+.core .corehead .coreheada{
+	padding-left: 175px;
+}
+/**
+ * 下面的格式
+ */
+.core .corebottom{
+	width: 1240px;
+	height: 800px;
+	padding-left: 20px;
+}
+.core .corebottom .corebottomb{
+	float: left;
+	width: 400px;
+	height: 232px;
+	padding-left: 5px;
+	padding-top: 40px;
+}
+/**
+ * 一个li的格式
+ */
+.core .corebottom img{
+	width: 148px;
+	height: 184px;
+	border:2px solid goldenrod;
+	float: left;
+}
+.core .corebottom .corebottoma{
+	height: 190px;
+}
+.core .corebottom .corebottoma p{
+	padding-top:5px;
+	font-size: 6px;
+}
+.core .corebottom .corebottoma h3{
+	color:goldenrod;
+}
+.core .corebottom .corebottoma h4{
+	padding-top:5px;
+	color:goldenrod;
+}
+.core .corebottom .corebottoma h6{
+	padding-top:2px;
+	font-size: 5px;
+	color:goldenrod;
+}
+.core .corebottom .corebottoma{
+	padding-left: 175px;
+}

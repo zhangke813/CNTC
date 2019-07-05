@@ -1,0 +1,48 @@
+.optimization{
+	width: 1160px;
+	padding-bottom: 0px;
+	margin: 0 auto;
+	background:url(chuangyou/about-bg-2.jpg)
+}
+.optimization .title{
+	font-size: 15px;
+	color: #333333;
+	text-align:center;
+	padding-top: 60px;
+}
+.optimization .box1{
+	margin-top: 50px;
+}
+
+.optimization .en1{
+	font-size: 25px;
+	font-weight: bold;
+	color: #CEA66C;
+	margin-left: 107px;
+	margin-top: 40px;
+}
+.optimization .box1 .img1{
+	margin-top: 40px;
+	text-align: center;
+}
+.optimization .box1 .img2{
+	text-align: center;
+	margin-top: 30px;
+}
+.optimization .box2{
+	margin-top:50px;
+}
+.optimization .box2 .en2{
+	font-size: 24px;
+	font-weight: bold;
+	color: #CEA66C;
+	margin-top:20px;
+	margin-left: 107px;
+}
+.optimization .box2 .img3{
+	margin-top: 40px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+

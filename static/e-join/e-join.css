@@ -1,0 +1,339 @@
+.join {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.join2 {
+    margin: 0 auto;
+    width: 1160px;
+    background: rgb(255, 255, 255);
+}
+
+.join3 {
+    margin: 0 auto;
+    width: 1160px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.join3 .topgz {
+    margin-top: 30px;
+    font-size: 18px;
+    background: #FFF;
+    margin-bottom: 80px;
+    padding: 50px;
+    color: rgb(110, 107, 107);
+}
+
+.join2 .topss1 .topss {
+    padding-top: 80px;
+    width: 1160px;
+}
+
+.join2 .topss1 .topss p {
+    position: absolute;
+    top: 329px;
+    left: 0px;
+    width: 593px;
+    height: 369px;
+}
+
+.join .top1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: "黑体";
+    color: rgb(110, 107, 107);
+}
+
+.join .top2 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(194, 140, 102);
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.join2 .p1 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(110, 107, 107);
+}
+
+.join2 .content1 {
+    margin-bottom: 150px;
+    margin-top: 25px;
+    border-top: 1px dashed #999;
+}
+
+.join2 .zp_jl {
+    padding-top: 30px;
+    width: 530px;
+    float: right;
+    color: rgb(110, 107, 107);
+}
+
+.join2 .p2 {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(110, 107, 107);
+}
+
+.join2 h3 {
+    margin-top: 10px;
+    color: rgb(94, 92, 92)
+}
+
+.join2 .p3 {
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: rgb(110, 107, 107);
+}
+
+.join .top3 {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 50px;
+    color: rgb(110, 107, 107);
+    padding-bottom: 20px;
+}
+
+.join .top4 {
+    width: 200px;
+}
+
+.join2 .topss1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: "黑体";
+    color: rgb(110, 107, 107);
+}
+
+.join2 .topss3 {
+    border-top: 1px dashed #999;
+    clear: both;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 60px;
+    font-size: 25px;
+}
+
+.join2 .topss4 {
+    margin-top: 25px;
+    margin-left: 85px;
+    margin-bottom: 50px;
+}
+
+.tit1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 35px;
+    font-family: "黑体";
+    color: rgb(110, 107, 107);
+}
+
+.join3 .p1 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: "黑体";
+    color: rgb(110, 107, 107);
+}
+
+.join4 {
+    margin: 0 auto;
+    width: 1160px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    background: #FFF;
+}
+
+.join4 .online1 {
+    width: 900px;
+    border-bottom: 1px solid #999;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.join4 .online1 span {
+    /*     display: block; 变成一个块 */
+    display: block;
+    width: 220px;
+    float: left;
+    color: #CEA66C;
+    font-size: 16px;
+    text-align: center;
+}
+
+.join4 .online2 {
+    margin: 0 auto;
+    width: 900px;
+    height: 50px;
+    border-bottom: 1px dashed #999;
+}
+
+.join4 .online2 span {
+    display: block;
+    width: 220px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.join4 .online .job1 .job1-develop {
+    margin-top: 35px;
+}
+
+.join4 .online .job1 p {
+    font-size: 13px;
+    text-align: left;
+    padding-top: 7px;
+    width: 900px;
+    height: auto;
+    padding-left: 150px;
+}
+
+.join4 .online .job1 a {
+    width: 100px;
+    height: 30px;
+    /* border-radius:5px; 圆角边框 */
+    border-radius: 5px;
+    display: block;
+    /* margin:0 auto 设置对象上下间距为0，左右自动。 */
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    /*  line-height:30px;   上下两行 基线 的距离*/
+    line-height: 30px;
+    color: #FFF;
+    font-size: 16px;
+    background: #CAAA6F;
+}
+
+.job1 .job1-develop {
+    display: none;
+    /*默认隐藏*/
+}
+
+.job1:hover .job1-develop {
+    display: initial;
+    /*当鼠标hover时展示*/
+    /* initial 关键字用于设置 CSS 属性为它的默认值。
+    initial 关键字可用于任何 HTML 元素上的任何 CSS 属性。 */
+    /* display:block;
+    是让对象成为块级元素(比如a，span等) */
+}
+
+.join5 {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.join5 .join5-zp1 {
+    width: 1160px;
+}
+
+.join5 input {
+    width: 200px;
+    height: 30px;
+}
+
+.join5 .join5-zp1 .join5-zp2 {
+    padding: 40px;
+    background: #FFF;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 200px;
+    color: rgb(99, 96, 96);
+}
+
+/* .main_bg{
+    background-image:url(../join/images/salary_bg1.jpeg);
+    margin-top: -30px;
+    margin-bottom: -80px;
+    padding-bottom: 90px;
+    padding-top: 15px;
+    background-attachment: fixed;
+    background-size: 100%
+} */
+
+.join6 {
+    margin: 0 auto;
+    width: 1160px;
+    margin-top: 25px;
+    padding-top: 50px;
+    border-radius: 10px;
+}
+
+.join6 .pr-1 {
+    width: 1160px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 20px;
+}
+
+.join6 li {
+    font-size: 17px;
+    color: #CAAB6F;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.join6 .qa-con {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.bott {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.bott .wel_ques {
+    background: #CAAA6F;
+    height: 35px;
+    width: 1000px;
+}
+
+.bott .wel_ques p {
+    text-align: center;
+}
+
+.inp_ut {
+    width: 998px;
+    height: 300px;
+    ;
+}
+
+.butt_ton {
+    margin-left: 450px;
+    width: 120px;
+    height: 30px;
+    background: #CAAA6F;
+    border-radius: 5px;
+}

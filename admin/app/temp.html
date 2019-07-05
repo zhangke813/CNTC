@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../modules/vue/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../modules/vue/vue-resource.min.js"></script>
+		<script src="../modules/serverStorage.js"></script>
+	</head>
+	<body>
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td colspan="2">$theader</td>
+			</tr>
+			<tr>
+				<td width="80%">$tcontext</td>
+				<td width="20%">$taside</td>
+			</tr>
+			<tr>
+				<td colspan="2">$footer</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			
+			serverStorage.getItem('text', function(textres) {
+				serverStorage.getItem('templates', function(tempres) {
+					serverStorage.getItem('blocks',function(blockres){
+						var args = location.href.split('?')[1] //取到？号后面的值
+						if (!args) return //判断是否args的取值是否存在
+						var arg = args.split('=')
+						if ('id' == arg[0])
+							var name =decodeURI(arg[1])
+							
+						var alltext = textres.body
+						var text = {}
+						for(var i=0;i<alltext.length;i++){
+							if(name==alltext[i].title){
+								text = alltext[i]
+							}
+						}
+						var headerhtml = ''
+						var footerhtml = ''
+						var asidehtml = ''
+						document.getElementsByTagName('td')[1].innerHTML = text.html || ''
+						var alltemp = tempres.body || []
+						var allblock = blockres.body || []
+						for (var i = 0; i < alltemp.length; i++) {
+							if (alltemp[i].title == text.temp) {
+								for (var j = 0; j < alltemp[i].header.length; j++) {
+									for(var k=0;k<allblock.length;k++){
+										if(allblock[k].title == alltemp[i].header[j]){
+											headerhtml += allblock[k].html
+										}
+									}
+								}
+								for (var j = 0; j < alltemp[i].footer.length; j++) {
+									for(var k=0;k<allblock.length;k++){
+										if(allblock[k].title == alltemp[i].footer[j]){
+											footerhtml += allblock[k].html
+										}
+									}
+								}
+								for (var j = 0; j < alltemp[i].aside.length; j++) {
+									for(var k=0;k<allblock.length;k++){
+										if(allblock[k].title == alltemp[i].aside[j]){
+											asidehtml += allblock[k].html
+										}
+									}
+								}
+								
+							}
+						}
+						document.getElementsByTagName('td')[0].innerHTML = headerhtml
+						document.getElementsByTagName('td')[3].innerHTML = footerhtml
+						document.getElementsByTagName('td')[2].innerHTML = asidehtml
+						
+					})
+					
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!--
+	作者:李鸿府
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>加入三建</title>
+  <link rel="stylesheet" type="text/css" href="../static/base.css" />
+  <link rel="stylesheet" type="text/css" href="../static/join/join.css" />
+  <style type="text/css">
+		#exhibition {
+			background-image: url('../static/join/images/top1.jpg');
+			background-position-x: left;
+			background-position-y: bottom;
+		}
+	</style>
+</head>
+
+<body>
+  <!-- 类命名规则,必须带顶层元素的类名如: .main p -->
+  <!-- 演示模块加载器 -->
+  <div include="../static/header.htm"></div>
+  <div class="main_bg">
+  <div class="join5" style="padding-top:0px;">
+    <div class="join5-zp1" style="padding-top:0px; padding-bottom:80px; margin-top:0px;">
+      <h1 class="tit1">在线招聘</h1>
+      <div class="join5-zp2" style="display:block; margin:0 auto; margin-top:50px;">
+        <form method="post">
+          <input type="hidden" name="cid" value="" />
+          <table border="0" cellspacing="10" class="c-input">
+            <tr>
+              <td width="15%" align="right">姓　　名：</td>
+              <td width="35%"><input type="text" name="myname" value="" /></td>
+              <td width="15%" align="right">性　　别：</td>
+              <td width="35%">男<input name="xb" type="radio" style="width:10px; height:10px;" value="男" />
+                &nbsp;&nbsp;&nbsp;女<input name="xb" type="radio" value="女" style="width:10px; height:10px;" /> </td>
+            </tr>
+            <tr>
+              <td align="right">婚姻状况：</td>
+              <td><input type="text" value="" name="hy" /></td>
+              <td align="right">出生日期：</td>
+              <td><input type="text" value="" name="bd" /></td>
+            </tr>
+            <tr>
+              <td align="right">毕业院校：</td>
+              <td><input type="text" value="" name="xx" /></td>
+              <td align="right">毕业日期：</td>
+              <td><input type="text" value="" name="byrq" /></td>
+            </tr>
+            <tr>
+              <td align="right">学　　历：</td>
+              <td>
+                <select name="xl">
+                  <option value="初中">初中</option>
+                  <option value="高中">高中</option>
+                  <option value="专科">专科</option>
+                  <option selected="selected" value="本科">本科</option>
+                  <option value="本可以上">本科以上</option>
+                </select>
+              </td>
+              <td align="right">专　　业：</td>
+              <td><input type="text" value="" name="zy" /></td>
+            </tr>
+            <tr>
+              <td align="right">电　　话：</td>
+              <td><input type="text" value="" name="tel" /></td>
+              <td align="right">电子邮箱：</td>
+              <td><input type="text" value="" name="mail" /></td>
+            </tr>
+            <tr>
+              <td align="right">联系地址：</td>
+              <td colspan="3"><input type="text" value="" style="width:552px;" name="add" /></td>
+            </tr>
+            <tr>
+              <td align="right">专　　长：</td>
+              <td colspan="3"><textarea style="width:552px; height:150px;" name="zc"></textarea></td>
+            </tr>
+            <tr>
+              <td align="right">自我介绍：</td>
+              <td colspan="3"><textarea style="width:552px; height:150px;" name="js"></textarea></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3">
+                <input type="submit" value="填写完成并提交"
+                  style="width:150px; height:30px; background:#CEA66C; text-align:center; color:#FFF; line-height:30px; font-size:16px;border:none;" />
+                <input type="reset" value="重新填写"
+                  style="width:100px; height:30px; background:#999; text-align:center; color:#FFF; line-height:30px; font-size:16px; border:none;" />
+              </td>
+            </tr>
+          </table>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+  <div include="../static/footer.htm"></div>
+
+  <script src="../module/jquery-2.1.0.js"></script>
+
+  <!-- 模块加载器 -->
+  <script src="../module/module.js"></script>
+</body>
+
+</html>

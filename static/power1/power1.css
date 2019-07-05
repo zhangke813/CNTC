@@ -1,0 +1,69 @@
+.power1{
+	width: 1160px;
+	margin:0 auto;
+	background-color:#fff;
+	margin-top:30px;
+}
+
+.power1 .broad{
+	width: 1160px;
+	height: 115px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.power1 .introduce{
+	height: 150px;
+}
+
+.power1 .broad .title{
+	font-weight: normal;
+	color: #333;
+	font-size: 30px;
+	border-bottom: 4px solid #FF9818;
+	padding-bottom: 6px;
+}
+
+.power1 ul{
+	height:2024px;
+}
+
+.power1 li{
+	float: left;
+	margin-left:15px;
+	margin-top: 15px;
+	width: 363px;
+	height:300px;
+	border:1px solid #ccc;
+}
+
+.power1 img{
+	width: 363px;
+	height: 243px;
+}
+
+.power1 .last5 img{
+	height: 455px;
+}
+
+.power1 p{
+	color:#333333;
+	font-size: 14px;
+	line-height: 25px;
+	margin-top: 10px;
+}
+
+.power1 ul p{
+	text-align: center;
+}
+.power1 .last5 li{
+	float: left;
+	width: 363px;
+	height:512px;
+	border:1px solid #ccc;
+}
+
+.power1 .introduce p{
+	font-size: 18px;
+	line-height: 28px;
+}

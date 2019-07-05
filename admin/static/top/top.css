@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top {
+	height: 40px;
+	background-color: #183869;
+	line-height: 40px;
+}
+
+.top .top-left {
+	float: left;
+	height: 40px;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+}
+
+.top .top-left .top-log {
+	width: 70px;
+	background-color: #466087;
+	font-family: bold;
+}
+
+.top .top-left ul>li {
+	list-style-type: none;
+	width: 60px;
+	float: left;
+}
+
+.top .top-right {
+	position: relative;
+	float: right;
+	color: white;
+	font-size: 14px;
+	padding-right: 5px;
+}
+
+.top ul>li a {
+	display: block;
+	width: 60px;
+	height: 40px;
+	text-decoration: none;
+	color: white;
+}
+
+.top .top-left .top-log:hover {
+	background-color: #0E66A7;
+}
+
+.top .top-left ul>li:hover {
+	background-color: #0E66A7;
+}
+
+.top a:hover {
+	text-decoration: underline;
+	color: #23527c;
+}
+
+.top .top-right .top-set {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width: 140px;
+	text-align: center;
+	display: none;
+	border: 1px solid #183869;
+	background-color: #FFFFFF;
+	z-index: 99999;
+}
+
+.top .top-right .top-set .top-seta {
+	border: 1px solid #ccc;
+}
+
+.top .top-right .top-set .top-seta a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.top .top-right:hover .top-set {
+	display: initial;
+}
+
+.top .top-right .top-set .top-seta a:hover {
+	text-decoration: underline;
+	color: #000000;
+}

@@ -1,0 +1,33 @@
+
+.group {
+    width: 1160px;
+    margin: 0 auto;
+}
+.group_main{
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+table{
+    margin: 0 auto
+}
+.group .zzjg{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: "黑体";
+    color: rgb(110, 107, 107);
+}
+.group_1{
+    padding: 0cm;
+    border: 1px black 
+}
+.group_2{
+    background: #00ced1;
+}
+.group_3{
+    padding: 0.05cm 0cm;
+}

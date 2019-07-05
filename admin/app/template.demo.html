@@ -1,0 +1,32 @@
+<!-- 
+	作者:张俊男
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../static/base.css" />
+		<link rel="stylesheet" type="text/css" href="../static/top/top.css" />
+		<title>vue 高级 模块 demo</title>
+		<script src="../modules/vue/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/top/top.template.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<top></top>
+			<div class="template-demo">
+				<!-- 在这里编写代码 -->
+				{{text}}
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var demoVue = new Vue({
+				el:'#app',
+				data:{
+					text:'vue 高级 模块 demo'
+				}
+			})
+		</script>
+	</body>
+</html>

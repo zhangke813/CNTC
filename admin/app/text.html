@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../static/base.css" />
+		<link rel="stylesheet" type="text/css" href="../static/text/text.css" />
+		<link rel="stylesheet" type="text/css" href="../static/top/top.css" />
+		<title></title>
+		<script src="../modules/vue/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../modules/vue/vue-resource.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/top/top.template.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../modules/serverStorage.js"></script>
+	</head>
+	<body>
+		<div id="bpp" class="text">
+			<top></top>
+			<br>
+			<aside class="pull-left">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						所属模板
+					</div>
+					<div class="panel-body">
+						<ul>
+							<li v-for="txt in blockTemp" @click="selected(txt.title)">{{txt.title}}</li>
+							<!-- 这里的模板的取值的地方还要改为服务器上的模板分类 -->
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<div style="margin-left: 250px;margin-right: 20px;">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						正文列表
+						<a href="text-edit.html" class="btn btn-info pull-right" style="position: relative;top: -6px;">+添加</a>
+					</div>
+					<div class="panel-body">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>编号</th>
+									<th>标题<i></i></th>
+									<th>分类</th>
+									<th @click="timesort(texts)">时间^<i></i></th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for="(text,index) in texts" v-if="index >= page.start && index < page.end">
+									<td>{{index}}</td>
+									<td>{{text.title}}</td>
+									<td>{{text.temp}}</td>
+									<td>{{text.toptime}}</td>
+									<td>
+										<a @click="upDate(text.title)" :href="'text-edit.html?id=' + text.title">修改</a>
+										<a href="#" @click="del(text.title)">删除</a>
+										<a :href="'temp.html?id=' + text.title">预览</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="panel-footer" style="40px">
+						<div aria-label="Page navigation" class="pull-right" style="position: relative;top:-27px">
+							<ul class="pagination">
+								<li>
+									<a href='#'><span>
+											<</span> </a> </li> <li v-for="i in page.allPage">
+												<a :class="page.index + 1 == i?'text-action':''" @click="selectePage(i)" href="#">{{i}}</a>
+								</li>
+								<li>
+									<a href="#"><span>></span></a>
+								</li>
+								</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../static/text/text.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

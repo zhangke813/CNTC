@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>区块列表</title>
+		<link rel="stylesheet" type="text/css" href="../modules/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/common/cms.css" />
+		<style type="text/css">
+			nav > ul > li:nth-child(4) > a{
+				background-color: #2286d2;
+			}
+		</style>
+	</head>
+	<body>
+		<div include="../static/nav.htm"></div>
+
+		<div id="block" class="block">
+			<div class="panel panel-info" style="margin: 8px 20px 0 20px;">
+				<div class="panel-heading">
+					区块列表 <a href="block-edit.html" class="btn btn-info pull-right" style="position: relative;top: -6px;"><i class="glyphicon glyphicon-plus"></i>
+						添加区块</a>
+				</div>
+				<div class="panel-body">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>编号</th>
+								<th>标题 <i class="glyphicon glyphicon-chevron-down"></i></th>
+								<th>分类</th>
+								<th>时间 <i class="glyphicon glyphicon-chevron-up"></i></th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr v-for="block in blocks" class="active">
+								<th scope="row">1</th>
+								<td>{{block.title}}</td>
+								<td>{{block.createTime}}</td>
+								<td>Column content</td>
+								<td>
+									<a href="#" class="btn btn-link btn-sm">编辑</a>
+									<a href="#" class="btn btn-link btn-sm">删除</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="panel-footer" style="height: 40px;">
+					<div aria-label="Page navigation" class="pull-right" style="position: relative; top: -27px;">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../modules/jquery-2.1.0.js"></script>
+		<script src="../modules/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="../modules/module.js"></script>
+		<!--
+			//vue与jquery在事件绑定上有冲突,这里的示范并不良好
+			//如果实在要用请不要使用jquery绑定事件
+		-->
+		<script src="../modules/vue/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../modules/vue/vue-resource.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var block = new Vue({
+				el: "#block",
+				beforeCreate: function() {
+					//console.log("1.组件创建前,可以添加loading效果")
+					this.$http.get('/admin/block',  {
+						emulateJSON: true
+					}).then(function(res) {
+						block.blocks = res.body
+					})
+				},
+				data: {
+					title: "区块列表",
+					blocks:[]
+				},
+				methods: {
+					get: function() {
+						//3.方法初始化
+					},
+					selectCategroy: function(category) {
+						this.contexts = this.categoryMap.get(category);
+						
+					},
+					submitContext: function() {
+						
+					}
+				},
+				created: function() {
+					// console.log("4.组件已创建,但dom还未初始化,")
+					// console.log("	a.可以在这里取消loading效果")
+					// console.log("	b.可以初始化data数据,比如在cookie/localStorage中读取数据赋值给data")
+				},
+				beforeMount: function() {
+					// console.log("5.组件模板挂载前")
+					// console.log("	a.初始化dom挂在数据")
+				},
+				mounted: function() {
+					// console.log("6.组件模板挂载后,但不保证已在docment中")
+					// console.log("	a.dom挂在后的更新")
+				},
+				beforeUpdate: function() {
+					// console.log("视图显示中 i.组件更新前")
+					// console.log("	a.统一视图初始化数据")
+				},
+				updated: function() {
+					// console.log("视图显示中 ii.组件更新后")
+					// console.log("	a.统一视图修改")
+				},
+				beforeDestroy: function() {
+					console.log("7.组件销毁前")
+					console.log("	a.数据本地化存储,比如:写入cookis/localStorage")
+				},
+				destroyed: function() {
+					// console.log("7.组件销毁后")
+				}
+			})
+		</script>
+	</body>
+</html>

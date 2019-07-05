@@ -1,0 +1,39 @@
+.power{
+	width:1160px;
+	height: 1600px;
+	margin:0 auto;
+}
+ul{
+	padding: 30px;
+	height:1700px;
+	margin-left:8px;
+}
+li{
+	width: 261px;
+	heigth:340px;
+	margin-right:12px;
+	float:left;
+	margin-top:20px;
+}
+.broad{
+
+	margin-top:30px;
+	text-align: center;
+	font-size: 30px;
+}
+.broad strong.ss{
+	font-weight: normal;
+	border-bottom:solid 4px #FF9818;
+}
+img{
+	height:271px;
+	width:261px;
+}
+.power h4{
+	text-align: center;
+}
+.power.deg{
+	font-size: 14px;
+	text-align: center;
+	color: #656565;
+}

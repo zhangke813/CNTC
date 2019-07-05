@@ -1,0 +1,232 @@
+.text div {
+	box-sizing: border-box;
+}
+
+.text .pull-left {
+	float: left;
+	width: 220px;
+	margin-left: 20px;
+}
+
+.text .panel {
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.text .panel-success {
+	border-color: #d6e9c6;
+}
+
+.text .panel-success .panel-heading {
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	font-size: 13px;
+}
+
+.text .panel-success .panel-body {
+	padding: 15px;
+}
+
+.text .panel-info {
+	border-color: #bce8f1;
+}
+
+.text .panel-info .panel-heading {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.text .panel-body {
+	padding: 15px;
+}
+
+.text .table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.text table {
+	background-color: transparent;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.text table thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.text table tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.text .table thead tr th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #ddd;
+	border-top: 0;
+}
+.text tr td {
+	text-align: center;
+	padding: 15px;
+	border: solid 1px #DADADA;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	font-family: "宋体";
+}
+.text tr td:first-child{
+	text-align: center;
+	padding: 15px;
+	border: solid 1px #DADADA;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	font-family: "宋体";
+	font-weight: bolder;
+}
+
+.text .btn {
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	position: relative !important;
+	top: -6px !important;
+}
+
+.text .btn-info {
+	color: #fff;
+	background-color: #5bc0de;
+	border-color: #46b8da;
+}
+
+.text .pull-right {
+	float: right;
+}
+
+.text a {
+	text-decoration: none;
+	color: #000000;
+	/* a标签下面的横线 */
+}
+.text a:hover{
+	color: #0066CC;
+}
+
+.text .panel-footer {
+	padding: 10px 15px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	height: 40px;
+}
+
+.text .pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: 20px 0;
+	border-radius: 4px;
+
+}
+
+.text .pagination li {
+	display: inline;
+	list-style-type: none;
+}
+
+.text .pagination li a {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	color: #337ab7;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.text .pagination li:first-child a {
+	margin-left: 0;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.text .pagination li:last-child a {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.text body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+}
+
+.text .pagination li:hover {
+	background-color: #23527C;
+}
+
+.text .btn-info:hover {
+	background-color: skyblue;
+}
+
+.text .text-action {
+	background-color: #aaa !important;
+	color: #fff !important;
+}
+.text .panel-body ul {
+	border: solid 1px #DADADA;
+	border-radius: 4px;
+}
+.text .panel-body ul li{
+	border: solid 1px #DADADA;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	padding-left:10px ;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-family: "宋体";
+	font-size: 15px;
+	color: dimgrey;
+	cursor:pointer;
+}
+.text .panel-body ul li:last-child{
+	border: none;
+}
+.text .table thead tr th:nth-child(4):hover{
+	color: #0088CC;
+	cursor:pointer;
+}
+.text .panel-body ul li:hover{
+	background-color:#DADADA;
+}
+.top .top-left ul li:nth-child(2) a{
+	color: #000000;
+	background-color: #0E66A7;
+}
+

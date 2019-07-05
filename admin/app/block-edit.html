@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../static/block/block.css" />
+    <link rel="stylesheet" type="text/css" href="../static/top/top.css" />
+    <link href="../modules/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+
+    <title>区块编辑</title>
+    <script src="../modules/vue/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../modules/vue/vue-resource.min.js"></script>
+    <script src="../modules/serverStorage.js"></script>
+    <script src="../static/top/top.template.js"></script>
+
+    <script type="text/javascript" src="../modules/umeditor/third-party/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../modules/umeditor/umeditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../modules/umeditor/umeditor.min.js"></script>
+    <script type="text/javascript" src="../modules/umeditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+
+<body>
+    <div id="blo2" class="block_listt">
+        <top></top>
+        <div class="block block_around" style="margin: 8px 20px 0 20px;">
+            <div class="block_list_1">
+                <div style="font-size: 14px;line-height:40px; padding-left: 20px;color: rgb(29, 62, 170);float: left">
+                    区块编辑
+                </div>
+            </div>
+            <div class="bl_add">
+                <form class="block-edit-body">
+                    <div class="form-first">
+                        <label class="add_1l">名称:</label>
+                        <div class="add_1r">
+                            <input v-model="blockedit.title" id="bname" placeholder="请输入区块名称">
+                        </div>
+                    </div>
+                    <div class="form-first">
+                        <label class="add_1l">HTML:</label>
+                        <div class="add_1r">
+                            <div class="input2">
+                                <script type="text/plain" id="myEditor" class="form-control">
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <div class="form-first">
+                    <div class="butto_n2">
+                        <button class="btn" :disabled="addbtn.state" @click="addblock"
+                            type="button">{{addbtn.text}}</button>
+                        <button class="btn" onclick="window.location.href='../app/block.html'">返回</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../static/block-edit/block-edit.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
+<!-- 正则表达式去空格 -->
+
+<!-- <div class="add_1">
+                <div class="add_1l">
+                    名称:
+                </div>
+                <div class="add_1r">
+                    <input id="bname" v-model="blockedit.title" placeholder="请输入名称">
+                </div>
+            </div>
+           <div class="body-group">
+                        <label class="g-name">HTML:</label>
+                        <div class="input-group">
+                            <script type="text/plain" id="myEditor" class="g-input1">  
+                                </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="butto_n2">
+                    <button style="cursor: pointer;" :disabled="addbtn.state" @click="addblock"
+                        type="button">{{addbtn.text}}</button>
+                    <button style="cursor: pointer;" onclick="window.location.href='../app/block.html'">返回</button>
+                </div> -->

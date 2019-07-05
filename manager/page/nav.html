@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>导航设置 - scms</title>
+		<link rel="stylesheet" type="text/css" href="../modules/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/common/cms.css" />
+		<style type="text/css">
+			nav > ul > li:nth-child(5) > a{
+				background-color: #2286d2;
+			}
+			.list-group-item{
+				padding: 2px 15px;
+				border: none;
+			}
+			
+			.preview{
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				z-index: 888;
+				margin-bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div include="../static/nav.htm"></div>
+
+		<div class="nav">
+			<div class="panel panel-default preview">
+				<div class="panel-heading" style="padding: 5px 15px;">
+						导航预览
+				</div>
+				<div class="panel-body">
+						导航预览
+				</div>
+			</div>
+
+			<div style="margin: 8px 20px 0 20px;">
+				<ul class="list-group">
+					<li class="list-group-item form-inline">
+						<i class="glyphicon glyphicon-plus"></i>
+						<div class="form-group">
+							<input style="width: 180px;" class="form-control" type="text" id="" value="首页" />
+							<input style="width: 120px;" class="form-control" type="text" id="" value="模板" />
+							<input style="width: 360px;" class="form-control" type="text" id="" value="新闻" />
+						</div>
+						<div class="pull-right">
+							<a href="#">增加</a>
+							<a href="#">删除</a>
+							<a href="#">子导航</a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-up"></i></a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-down"></i></a>
+						</div>
+					</li>
+					<li class="list-group-item form-inline">
+						<i class="glyphicon glyphicon-plus"></i>
+						<div class="form-group">
+							<input style="width: 180px;" class="form-control" type="text" id="" placeholder="导航名称" />
+							<select style="width: 120px;" class="form-control" >
+							  <option selected="selected">未选择模板</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							  <option>5</option>
+							</select>
+							
+							<select style="width: 360px;" class="form-control">
+							  <option selected="selected">未选择新闻或正文</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							  <option>5</option>
+							</select>
+						</div>
+						
+						<div class="pull-right" style="line-height: 35px;">
+							<a href="#">增加</a>
+							<a href="#">删除</a>
+							<a href="#">子导航</a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-up"></i></a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-down"></i></a>
+						</div>
+					</li>
+					<li class="list-group-item form-inline">
+						<i class="glyphicon glyphicon-minus"></i>			
+						<div class="form-group">
+							<input style="width: 180px;" class="form-control" type="text" id="" value="java从入门到放弃" />
+							<input style="width: 120px;" class="form-control" type="text" id="" value="模板" />
+							<input style="width: 360px;" class="form-control" type="text" id="" value="新闻" />
+						</div>
+						<div class="pull-right">
+							<a href="#">增加</a>
+							<a href="#">删除</a>
+							<a href="#">子导航</a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-up"></i></a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-down"></i></a>
+						</div>
+						
+						<ul class="list-group" style="margin-top: 10px;">
+							<li class="list-group-item form-inline">
+						<i class="glyphicon glyphicon-plus"></i>
+								<div class="form-group">
+									<input style="width: 180px;" class="form-control" type="text" id="" value="javaSE" />
+									<input style="width: 120px;" class="form-control" type="text" id="" value="模板" />
+									<input style="width: 360px;" class="form-control" type="text" id="" value="新闻" />
+								</div>
+								<div class="pull-right">
+									<a href="#">增加</a>
+									<a href="#">删除</a>
+									<a href="#">子导航</a>
+									<a href="#"><i class="glyphicon glyphicon-arrow-up"></i></a>
+									<a href="#"><i class="glyphicon glyphicon-arrow-down"></i></a>
+								</div>
+							</li>
+							
+							<li class="list-group-item form-inline">
+						<i class="glyphicon glyphicon-plus"></i>
+								<div class="form-group">
+									<input style="width: 180px;" class="form-control" type="text" id="" value="JDBC" />
+									<input style="width: 120px;" class="form-control" type="text" id="" value="模板" />
+									<input style="width: 360px;" class="form-control" type="text" id="" value="新闻" />
+								</div>
+								<div class="pull-right">
+									<a href="#">增加</a>
+									<a href="#">删除</a>
+									<a href="#">子导航</a>
+									<a href="#"><i class="glyphicon glyphicon-arrow-up"></i></a>
+									<a href="#"><i class="glyphicon glyphicon-arrow-down"></i></a>
+								</div>
+							</li>
+							
+							<li class="list-group-item form-inline">
+						<i class="glyphicon glyphicon-plus"></i>
+								<div class="form-group">
+									<input style="width: 180px;" class="form-control" type="text" id="" value="JavaEE" />
+									<input style="width: 120px;" class="form-control" type="text" id="" value="模板" />
+									<input style="width: 360px;" class="form-control" type="text" id="" value="新闻" />
+								</div>
+								<div class="pull-right">
+									<a href="#">增加</a>
+									<a href="#">删除</a>
+									<a href="#">子导航</a>
+									<a href="#"><i class="glyphicon glyphicon-arrow-up"></i></a>
+									<a href="#"><i class="glyphicon glyphicon-arrow-down"></i></a>
+								</div>
+							</li>
+							
+							<li class="list-group-item form-inline">
+						<i class="glyphicon glyphicon-plus"></i>
+								<div class="form-group">
+									<input style="width: 180px;" class="form-control" type="text" id="" value="流行框架" />
+									<input style="width: 120px;" class="form-control" type="text" id="" value="模板" />
+									<input style="width: 360px;" class="form-control" type="text" id="" value="新闻" />
+								</div>
+								<div class="pull-right">
+									<a href="#">增加</a>
+									<a href="#">删除</a>
+									<a href="#">子导航</a>
+									<a href="#"><i class="glyphicon glyphicon-arrow-up"></i></a>
+									<a href="#"><i class="glyphicon glyphicon-arrow-down"></i></a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="list-group-item form-inline">
+						<i class="glyphicon glyphicon-plus"></i>
+						<div class="form-group">
+							<input style="width: 180px;" class="form-control" type="text" id="" value="关于我们" />
+							<input style="width: 120px;" class="form-control" type="text" id="" value="模板" />
+							<input style="width: 360px;" class="form-control" type="text" id="" value="新闻" />
+						</div>
+						<div class="pull-right">
+							<a href="#">增加</a>
+							<a href="#">删除</a>
+							<a href="#">子导航</a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-up"></i></a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-down"></i></a>
+						</div>
+					</li>
+					
+					<li class="list-group-item form-inline">
+						<i class="glyphicon glyphicon-plus"></i>
+						<div class="form-group">
+							<input style="width: 180px;" class="form-control" type="text" id="" value="其它" />
+							<input style="width: 120px;" class="form-control" type="text" id="" value="模板" />
+							<input style="width: 360px;" class="form-control" type="text" id="" value="新闻" />
+						</div>
+						<div class="pull-right">
+							<a href="#">增加</a>
+							<a href="#">删除</a>
+							<a href="#">子导航</a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-up"></i></a>
+							<a href="#"><i class="glyphicon glyphicon-arrow-down"></i></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="../modules/jquery-2.1.0.js"></script>
+		<script src="../modules/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="../modules/module.js"></script>
+	</body>
+</html>

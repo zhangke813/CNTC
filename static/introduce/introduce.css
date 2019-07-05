@@ -1,0 +1,240 @@
+.introduce {
+	margin: 0 auto;
+	width: 1160px;
+	height: 1100px;
+}
+
+.pi{
+	opacity: 0.8;
+	height: 500px;
+	width: 1160px;
+	margin: 0 auto;
+	background-image: url(../e-introduce/block.png);
+	position: relative;
+}
+
+.introduce .log {
+	text-align: center;
+	margin-top: 50px;
+	margin: 0 auto;
+	font-size: 40px;
+	color: goldenrod;
+}
+
+.p {
+	margin: 20px;
+}
+
+.introduce div {
+	margin: 0 auto;
+	width: 1160px;
+}
+.pi #Overseas{
+	width: 90px;
+	height: 42px;
+	position: absolute;
+	top:277px;
+	left:475px;
+	border: 1px solid purple;
+	text-align: center;
+	background-color: purple;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+.pi #EasternEurope{
+	width: 115px;
+	height: 30px;
+	position: absolute;
+	top:110px;
+	left: 620px;
+	border: 1px solid deepskyblue;
+	text-align: center;
+	background-color: deepskyblue;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+.pi #SouthernAfrica{
+	width: 90px;
+	height: 25px;
+	position: absolute;
+	top: 360px;
+	left: 550px;
+	border: 1px solid purple;
+	text-align: center;
+	background-color: purple;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+.pi #SoutheastAsia{
+	width: 90px;
+	height: 25px;
+	position: absolute;
+	top: 310px;
+	right: 315px;
+	border: 1px solid seagreen;
+	text-align: center;
+	background-color: seagreen;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+.pi #SouthAsia{
+	width: 80px;
+	height: 25px;
+	position: absolute;
+	top: 260px;
+	right: 400px;
+	border: 1px solid green;
+	text-align: center;
+	background-color: green;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+.pi #MiddleEast{
+	width: 80px;
+	height: 25px;
+	position: absolute;
+	top: 220px;
+	left: 600px;
+	border: 1px solid cadetblue;
+	text-align: center;
+	background-color: cadetblue;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+.pi #HQ{
+	width: 80px;
+	height: 25px;
+	position: absolute;
+	top: 230px;
+	right: 305px;
+	border: 1px solid darkgreen;
+	text-align: center;
+	background-color: darkgreen;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+.pi #SouthAmerica{
+	width: 80px;
+	height: 35px;
+	position: absolute;
+	top: 447px;
+	left: 315px;
+	border: 1px solid indianred;
+	text-align: center;
+	background-color: indianred;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#Overseas #text{
+	position: absolute;
+	width: 120px;
+	right: 100px;
+	bottom: -20px;
+	display: none;
+	text-align: center;
+	background-color: darkgray;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#SouthernAfrica #text{
+	position: absolute;
+	width: 120px;
+	right: 100px;
+	bottom: -20px;
+	text-align: center;
+	display: none;
+	background-color: darkgray;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#EasternEurope #text{
+	position: absolute;
+	width: 120px;
+	right: 120px;
+	bottom: -20px;
+	text-align: center;
+	display: none;
+	background-color: darkgray;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#SoutheastAsia #text{
+	position: absolute;
+	width: 120px;
+	left: 105px;
+	bottom: -40px;
+	text-align: center;
+	display: none;
+	background-color: darkgray;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#SouthAsia #text{
+	position: absolute;
+	width: 120px;
+	left: -20px;
+	top: 35px;
+	text-align: center;
+	display: none;
+	background-color: darkgray;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#MiddleEast #text{
+	position: absolute;
+	width: 120px;
+	right: 90px;
+	bottom: -20px;
+	text-align: center;
+	display: none;
+	background-color: darkgray;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#HQ #text{
+	position: absolute;
+	width: 120px;
+	left: -20px;
+	bottom: 35px;
+	text-align: center;
+	display: none;
+	background-color: darkgray;
+	color: #FFFFFF;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+#Overseas:hover #text{
+	display: block;
+}
+#EasternEurope:hover #text{
+	display: block;
+}
+#SouthernAfrica:hover #text{
+	display: block;
+}
+#SoutheastAsia:hover #text{
+	display: block;
+}
+#SouthAsia:hover #text{
+	display: block;
+}
+#MiddleEast:hover #text{
+	display: block;
+}
+#HQ:hover #text{
+	display: block;
+}

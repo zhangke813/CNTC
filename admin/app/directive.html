@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="../modules/vue/vue.js"></script>
+		<style>
+			p{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="box">
+			<input type="text" v-focus v-model="msg">
+			<p>{{msg}}</p>
+		</div>
+		<script>
+			Vue.directive('focus',{
+				inserted(el){
+					el.focus();
+				}
+			})
+
+			// Vue.directive('focus',function(el){
+			// 	// 复合事件：undate和bind
+			// 	console.log(el);
+			// 	el.focus();
+			// })
+			var vm=new Vue({
+				el:'#box',
+				data:{
+					msg:''
+				}
+			})
+		</script>
+	</body>
+</html>

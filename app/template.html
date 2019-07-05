@@ -1,0 +1,157 @@
+<!-- 
+    作者:张柯
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../static/template/template.css">
+		<link rel="stylesheet" type="text/css" href="../static/top/top.css" />
+		<script src="../modules/vue/vue.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="../modules/vue/vue-resource.min.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="../static/top/top.template.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../modules/serverStorage.js" type="text/javascript" charset="UTF-8"></script>
+	</head>
+	<body>
+		<div id="template" class="template">
+			<top></top><br />
+
+			<div class="box newTemplate">
+				
+				<div class="box1">
+					<span>
+						<input class="edite" type="text" placeholder="点击输入模板名称" v-model="newTemplate.title" style="height: 20px;width:180px; text-align: center; border: 0px; background: #DFF0D8;margin-left: 35px;;" />
+					</span>
+					<button class="bt_1" :disabled="addbtn.state" @click="add()">{{addbtn.text}}</button>
+					<button class="bt_1" @click="clear()" style="margin-left: 20px;">清空</button>
+				</div>
+
+				<div class="box2">
+					<table class="tb_1" border="1px" cellspacing="0px" cellpadding="0px" style="border-collapse: collapse;">
+						<tr>
+							<td colspan="2">
+								<div v-for='h_blok in newTemplate.header'>
+									<button type="button" class="bt_9">
+										{{h_blok}}
+									</button>
+								</div>
+								<button type="button" @click="btnfc_h()" class="bt_3"><strong style="font-weight: 1000;">+</strong>&nbsp;&nbsp;选择添加顶部栏</button>
+								<!-- <div class="selHeader" v-show="show">
+									<label v-for="block in blocks"><input type="checkbox" v-model='newTemplate.header' :value="block.title" name="block" />
+										{{block.title}}</label>
+									<button @click="hiddenshow()">关闭</button>
+								</div> -->
+							</td>
+						</tr>
+						<tr>
+							<td width="300px">
+								<button class="bt_4">正文部分</button>
+							</td>
+							<td>
+								<div v-for="a_blok in newTemplate.aside" style="width: 110px; margin-left: 16px;background: #DDDDDD;">
+									<div>
+										<button class="bt_10" type="button">
+											{{a_blok}}
+										</button>
+									</div>
+								</div>
+								<button class="bt_5" @click="btnfc_a()"><strong style="font-weight: 1000;">+</strong>&nbsp;选择添加右边栏</button>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div v-for="f_blok in newTemplate.footer" style="width: 220px; margin-left: 14px;background: #DDDDDD;">
+									<div>
+										<button class="bt_7" type="button">
+											{{f_blok}}
+										</button>
+									</div>
+								</div>
+
+								<button type="text" @click="btnfc_f()" class="bt_6"><strong style="font-weight: 1000;">+</strong>&nbsp;&nbsp;选择添加底部栏</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			
+			</div>
+
+			<div class="boxshow">
+				<div v-for="(template,index) in templates" class="box templateshow">
+					<div class="box1">
+						<div style="width:500px;">
+							<input class="edite" :value="template.title" type="text" placeholder="点击修改模板名称" style="height: 20px;width:180px; text-align: center; border: 0px; background: #DFF0D8; margin-left: 35px;" />
+							<button class="bt_1" @click="update(template.title)">修改</button>
+							<button class="bt_1" @click="del(template.title)" style="margin-left: 20px;">删除</button>
+						</div>
+					</div>
+
+					<div class="box2">
+						<table class="tb_1" border="1px" cellspacing="0px" cellpadding="0px" style="border-collapse: collapse;">
+							<tr>
+								<td colspan="2">
+									<div v-for="(theader,index) in template.header">
+										<button type="button" class="bt_9">
+											{{theader}}
+										</button>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td width="300px">
+									<button class="bt_4">正文部分</button>
+								</td>
+								<td>
+									<div v-for="(aside,index) in template.aside" style="width: 110px; margin-left: 16px;background: #DDDDDD;">
+										<div>
+											<button class="bt_10" type="button">
+												{{aside}}<!-- <strong style="font-size: 16px;">■</strong> - 区块 -->
+											</button>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan="2">
+									<div v-for="(footer,index) in template.footer" style="width: 220px; margin-left: 14px;background: #DDDDDD;">
+										<div>
+											<button class="bt_7" type="button">
+												{{footer}}<!-- <strong style="font-size: 16px;">■</strong> - 区块 -->
+											</button>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="blocksshow">
+
+				<div class="selHeader" v-show="show_h" style="margin-left: 20px;margin-top: 10px;">
+					<label v-for="block in blocks"><input type="checkbox" v-model='newTemplate.header' :value="block.title" name="block" />
+						{{block.title}}<br></label><br>
+					<button @click="hiddenshow_h()" class="close">关闭</button>
+				</div>
+
+				<div class="selAside" v-show="show_a" style="margin-left: 20px; margin-top: 10px;">
+					<label v-for="block in blocks"><input type="checkbox" v-model='newTemplate.aside' :value="block.title" name="block" />
+						{{block.title}}<br></label><br>
+					<button @click="hiddenshow_a()" class="close">关闭</button>
+				</div>
+
+				<div class="selFooter" v-show="show_f" style="margin-left: 20px;margin-top: 10px;">
+					<label v-for="block in blocks"><input type="checkbox" v-model='newTemplate.footer' :value="block.title" name="block" />
+						{{block.title}}<br></label><br>
+					<button @click="hiddenshow_f()" class="close">关闭</button>
+				</div>
+
+			</div>
+		</div>
+		<script src="../static/template/template.js" type="text/javascript" charset="UTF-8"></script>
+	</body>
+</html>

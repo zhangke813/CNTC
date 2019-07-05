@@ -1,0 +1,161 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+
+.cedit {
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.cedit-info {
+	border-color: #bce8f1;
+}
+
+.cedit-info .cedit-heading {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.cedit-body {
+	padding: 15px;
+}
+
+.body-group {
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-bottom: 15px;
+}
+
+.g-name,
+.body-group,
+.e-footer {
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.g-name {
+	float: left;
+}
+
+label {
+	margin-bottom: 5px;
+	font-weight: 700;
+	width: 80px;
+}
+
+.g-input {
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	color: #555;
+	background-color: #fff;
+	;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.input-group {
+	position: relative;
+	display: table;
+	width: 90%;
+	padding-left: 20px;
+}
+
+.input-group-btn {
+	position: relative;
+	font-size: 0;
+	width: 1%;
+	white-space: nowrap;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.input-group-btn .btn {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.btn .creat {
+	margin-left: 0;
+}
+
+.creat {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	border-top: 4px dashed;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+textarea,button {
+	font-family: inherit;
+	overflow: auto;
+	margin: 0;
+	font: inherit;
+}
+
+.btn {
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 4px;
+}
+
+.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.btn-save {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+}
+
+.g-input1 {
+	width: 100%;
+	height: auto;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.e-footer {
+	padding-left: 100px;
+}
+
+.btn-default:hover{
+	background-color: #CCCCCC;
+}
+
+.btn-save:hover {
+	background-color: #3C763D;
+}

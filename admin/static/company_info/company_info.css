@@ -1,0 +1,120 @@
+.company_info{
+	margin: 0 auto;
+	padding: 10px 40px;
+} 
+
+.company_info .company_name{
+	height: 50px;
+	 width: 800px; 
+}
+
+.company_info .company_name p{
+	
+	
+}
+
+.company_info .company_name .name_input{
+	width: 600px;
+	height: 30px;
+	margin-top: 14px;
+	margin-left: 18px;
+	border: 1px solid limegreen;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.company_info .name{
+	font-size: 16px;
+	font-weight: 600;
+	float: left;
+}
+
+.company_info textarea{
+	height: 300px;
+	width: 800px;
+}
+
+.company_info .company_synosis{
+	height: 280px;
+	margin-top: 10px;
+	text-align: center;
+	width: 1000px;
+	
+}
+
+.company_info .company_synosis p{
+	position: relative;
+	line-height: 100px;
+}
+
+.company_info .company_synosis textarea{
+	float: left;
+	height: 270px;
+	margin-left: 18px;
+	border: 1px solid limegreen;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.company_info  .company_introduce{
+	height: 300px;
+	text-align: center;
+	width: 1000px;
+}
+
+.company_info  .company_introduce p{
+	position: relative;
+	line-height: 300px;
+}
+
+.company_info  .company_introduce textarea{
+	float: left;
+	margin-left: 18px;
+	border: 1px solid limegreen;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.company_info .btn_save{
+	height: 30px;
+	widows: 40px;
+	background-color:cadetblue;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 10px;
+	margin-left: 15px;
+}
+
+.company_info .contact_title{
+	background-color: #F0F0F0;
+	height: 40px;
+	line-height: 40px;
+	margin: 20px 0;
+}
+
+.company_info .contact_title:before{
+	content: url(img/phone.png);
+}
+
+.company_info .contact_info label{
+	padding-left: 30px;
+	
+}
+
+.company_info .contact_info input{
+	width: 600px;
+	height: 30px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.company_info .btn_sub{
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #0088CC;
+	color: #FFFFFF;
+	margin-top: 40px;
+	margin-left: 100px;
+	border-radius: 8px;
+}

@@ -1,0 +1,52 @@
+.history {
+	width: 1160px;
+	margin: 0 auto;
+	height: 1200px;
+}
+
+.history header {
+	text-align: center;
+	margin: 40px 10px;
+}
+
+.history header h2 {
+	display: inline-block;
+	font-weight: normal;
+	font-size: 30px;
+	border-bottom: solid 4px #FF9818;
+	margin: auto;
+}
+
+.history .box {
+	padding: 0;
+	border: solid 1px #ddd;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	height: 150px;
+	overflow: hidden;
+}
+
+.history .box div {
+	padding: 20px 20px 10px;
+	color: #757575;
+}
+
+.history .box div h4 {
+	font-size: 18px;
+}
+
+.history .box .text {
+	padding: 0 20px;
+	color: #757575;
+}
+
+.history .box .bg {
+	float: right;
+	padding: 0;
+	margin-left: 20px;
+	border: 0;
+}
+
+.history .box .bg img {
+	width: 300px;
+}

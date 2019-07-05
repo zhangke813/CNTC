@@ -1,0 +1,264 @@
+/* '.' 表示类选择器 */
+/* min-width: 1160px; 宽度不能低于1160px */
+.home{
+	min-width: 1160px;
+}
+
+/* 多人合作,需要使用父元素 */
+/* background-color 背景颜色 */
+.home .about{
+	background:url(img/bg1.jpg) no-repeat center top;
+	
+}
+
+/* > 表示子代元素*/
+.home > div{
+	padding-top:60px ;
+	padding-bottom: 40px;
+}
+
+/* color: #cfa972; */
+/* .home h1 表示home下所有的h1 */
+/* .home h1 ' ' 表示亲代 */
+/* text-align: center 文本居中*/
+.home h1{
+	color: #cfa972;
+	text-align: center;
+	font-size: 42px;
+	font-weight: initial;
+}
+
+.home .about > p{
+	text-align: center;
+	padding-top: 8px;
+	font-size: 17px;
+	color: #000;
+	
+}
+
+.home .about > table{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 750px;
+}
+
+/* b 默认没有体积*/
+.home .about > table b{
+	color: #cfa972;
+	font-size: 72px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	display: inline-block;
+	font-weight: normal;
+}
+.home .about > table h2{
+	font-size: 14px;
+}
+
+.home .about table td{
+	border: 0;
+}
+
+.home .about > table p{
+	font-size: 14px;
+}
+
+.home .about .more{
+	height: 25px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.home .more > a{
+	background: #CFA972;
+	color: #fff;
+	padding: 4px 8px;
+	font-size: 12px;
+	border-radius: 4px;
+}
+
+.home .powers{
+	background: url(img/bg.jpg) no-repeat center top;
+	text-align: center;
+	font-size: 18px;
+}
+
+.home .powers .power-context{
+	width: 940px;
+	height: 344px;
+	margin: 0 auto;
+	margin-top: 30px;
+	
+}
+
+.home .powers .left{
+	float: left;
+	width: 315px;
+	padding: 35px;
+	background: #cea66c;
+	font-size: 16px;
+	text-align: left;
+	height: 274px;
+	color: #FFFFFF;
+}
+
+.home .power-context p{
+	text-indent: 2em;
+}
+
+.home .power-context a{
+	width: 90px;
+	height: 25px;
+	display: block;
+	background: #FFFFFF;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	font-size: 14px;
+	border-radius: 5px;
+	float: right;
+	color: #cea66c;
+	padding-top: 5px;
+	
+}
+
+.home .powers .rigth{
+	float: right;
+}
+
+.home .powers table{
+	width: 100%;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+.home .powers >table,td{
+	border: 1px solid #FFFFFF;
+	height: 35px;
+	font-size: 16px;
+	box-sizing: border-box;
+	border-collapse: collapse;
+	
+}
+
+.home .powers td{
+	text-align: left;
+	width: 33%;
+	text-indent: 2em;
+
+}
+
+.home .power-date{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.home .news{
+	background: url(img/bg.jpg) no-repeat center top;
+	text-align: center;
+	font-size: 18px;
+	width: 100%;
+	height: 790px;
+	position: relative;
+	margin: 0 auto;
+	flex-shrink: 0;
+}
+
+.home .news .news-context{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 60px;
+	
+	
+	
+}
+
+.home .news .news-context .left{
+	width: 565px;
+	float: left;
+	position: relative;
+	height: 452px;
+	margin: 0 auto;
+	
+}
+
+.home .news .news-context .left img{
+	 	width: 100%;
+	 	height: 100%;
+	 	position: absolute;
+	 	display: block;
+	 	border: 0;
+	 	overflow: hidden;
+}
+.home .news .news-context .left p{
+	width: 556px;
+    padding-left: 10px;
+    height: 40px;
+    background: url(img/bg-3.png);
+    line-height: 40px;
+    text-align: left;
+    font-size: 14px;
+    color: #FFF;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.home .news .right{
+	width: 600px;
+	float: right;
+	margin-top: 20px;
+}
+
+.home .news .right-nav{
+	width: 600px;
+	height: 25px;
+	border-bottom: 1px solid #cea66c;
+}
+
+.home .news .right-nav a{
+	display: block;
+	width: 90px;
+	height: 25px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	font-weight: 520;
+	color: #FFFFFF;
+	float: left;
+}
+
+.home .news-text{
+	display: block;
+	width: 600px;
+	padding-bottom: 40px;
+	margin-top: 10px;
+	position: relative;
+}
+
+.home .news-text li{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px dashed #f3f5f6;
+}
+
+.home .news-text li a{
+	float: left;
+	font-size: 14px;
+	color: #f3f5f6;
+}
+
+.home .news-text li span{
+	float: right;
+	font-size: 12px;
+	color: #ccc;
+}
+
+.home .news-text .more{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	font-size: 16px;
+	color: #FFFFFF;
+	
+}

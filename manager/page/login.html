@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../modules/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<style>
+			.center_center{
+				width: 600px;
+				margin: 10% auto;
+			}
+			
+		</style>
+	</head>
+	<body bgcolor="#3786ad" style="background: url(../static/common/image/admin-login-bg.jpg) center center no-repeat;">
+		<div class="panel panel-success center_center">
+			<div class="panel-heading">
+				<h1 class="text-center">东软知识管理系统-CMS</h1>
+			</div>
+			<div class="panel-body">
+				<div class="loginbox">
+					<form id="loginForm" action="context.html">
+						<div class="form-group">
+							<label for="uname">用户名</label>
+							<input type="email" class="form-control" id="uname" placeholder="请输入用户">
+						</div>
+						<div class="form-group">
+							<label for="upwd">密码</label>
+							<input type="password" class="form-control" id="upwd" placeholder="请输入密码">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="panel-footer text-center">
+				<button type="submit" form="loginForm" class="btn btn-success" style="width: 100px;">登陆</button>
+			</div>
+		</div>
+
+		<script src="../modules/jquery-2.1.0.js"></script>
+		<script src="../modules/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

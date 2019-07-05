@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>板块动态</title>
+		<link rel="stylesheet" type="text/css" href="../static/base.css" />
+	</head>
+	<body>
+		<!-- 演示模块加载器 -->
+		<div include="../static/header.htm"></div>
+			
+
+		<div class="_news center">
+			<h1><span>板块动态</span></h1>
+			<ul>
+				<!--<li><a href="../live/海外月刊/南通三建海外板块月刊【201904期】.pdf">南通三建海外板块月刊【201904期】.pdf</a></li>-->
+			</ul>
+			
+		</div>
+
+		<div include="../static/footer.htm"></div>
+		<script src="../module/jquery-2.1.0.js"></script>
+		<script src="../module/module.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var $ul = $("._news ul");
+				
+				$.get("http://ichiva.cn:8080/list.jsp?index=板块动态",function(res) {
+					
+					for(var i=0;i<res.length ;i++){
+						var $li = $("<li><a href='http://cntc.ichiva.cn:8080/live/板块动态/"+ res[i] +"'>"+  res[i] +"</a></li>");
+						$ul.append($li);
+					}
+				})
+				
+			})
+		</script>
+	</body>
+</html>

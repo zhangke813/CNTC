@@ -1,0 +1,161 @@
+.edit {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+
+.edit .cedit {
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.edit .cedit-info {
+	border-color: #bce8f1;
+}
+
+.edit .cedit-info .cedit-heading {
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.edit .cedit-body {
+	padding: 15px;
+}
+
+.edit .body-group {
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-bottom: 15px;
+}
+
+.edit .g-name,
+.edit .body-group,
+.edit .e-footer {
+	position: relative;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.edit .g-name {
+	float: left;
+}
+
+.edit label {
+	margin-bottom: 5px;
+	font-weight: 700;
+	width: 80px;
+}
+
+.edit .g-input {
+	width: 100%;
+	height: 34px;
+	font-size: 14px;
+	color: #555;
+	background-color: #fff;
+	;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.edit .input-group {
+	position: relative;
+	display: table;
+	width: 90%;
+	padding-left: 20px;
+}
+
+.edit .input-group-btn {
+	position: relative;
+	font-size: 0;
+	width: 1%;
+	white-space: nowrap;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.edit .input-group-btn .btn {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.edit .btn .creat {
+	margin-left: 0;
+}
+
+.edit .creat {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	border-top: 4px dashed;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+.edit textarea,
+.edit button {
+	font-family: inherit;
+	overflow: auto;
+	margin: 0;
+	font: inherit;
+}
+
+.edit .btn {
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	border: 1px solid;
+	border-radius: 4px;
+}
+
+.edit .btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.edit .btn-save {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+}
+
+.edit .g-input1 {
+	width: 100%;
+	height: auto;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.edit .e-footer {
+	padding-left: 130px;
+}
+
+.edit .btn-default:hover {
+	background-color: #CCCCCC;
+}
+
+.edit .btn-save:hover {
+	background-color: #3C763D;
+}
+.top .top-left ul li:nth-child(2) a{
+	color: #000000;
+	background-color: #0E66A7;
+}

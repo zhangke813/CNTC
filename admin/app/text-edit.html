@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../modules/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../static/base.css" />
+		<link rel="stylesheet" type="text/css" href="../static/text-edit/text-edit.css" />
+		<link rel="stylesheet" type="text/css" href="../static/top/top.css" />
+		<script src="../modules/vue/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../modules/vue/vue-resource.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/top/top.template.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../modules/umeditor/third-party/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../modules/umeditor/umeditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../modules/umeditor/umeditor.min.js"></script>
+		<script type="text/javascript" src="../modules/umeditor/lang/zh-cn/zh-cn.js"></script>
+		<script src="../modules/serverStorage.js"></script>
+	</head>
+	<body>
+		<div id="app" class="edit">
+			<top></top>
+			<br>
+			<div class="cedit cedit-info" style="margin: 8px 20px 0px;">
+				<div class="cedit-heading">
+					正文编辑
+				</div>
+				<div class="cedit-body">
+					<div class="body-group">
+						<label class="g-name">名称:</label>
+						<div class="input-group">
+							<input @change="changeName" v-focus v-model="newText.title" type="text" id="ename" placeholder="请输入正文名称" class="g-input" />
+							<i style="color: red;">{{rename}}</i>
+						</div>
+					</div>
+					<div class="body-group">
+						<label class="g-name">模板:</label>
+						<div class="input-group">
+							<select v-model="newText.temp" class="g-input">
+								<option v-for="t in blockTemp" :value ="t.title">{{t.title}}</option>
+								<!-- 这里也要在后面改为在服务器中取得模板的数量，再遍历相同数量的下拉选项 -->
+								<!-- <option value="标题">标题</option>
+								<option value="栏目">栏目</option>
+								<option value="格式">格式</option> -->
+							</select>
+						</div>
+					</div>
+					<div class="body-group">
+						<label class="g-name">HTML:</label>
+						<div class="input-group">
+							<!-- <textarea v-model="newText.html" rows="15" class="g-input1"></textarea> -->
+							<script  type="text/plain" id="myEditor" class="g-input1">
+							   
+							</script>
+						</div> 
+					</div>
+					<div class="body-group">
+						<div class="e-footer">
+							<button @click="addText" type="submit" :disabled="addbtn.state" class="btn btn-save">{{addbtn.text}}</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../static/text-edit/text-edit.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
